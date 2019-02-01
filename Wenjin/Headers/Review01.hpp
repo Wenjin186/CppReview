@@ -10,6 +10,6 @@
 #ifndef Review01_hpp
 #define Review01_hpp
 
-#include <stdio.h>
+void print();
 
 #endif /* Review01_hpp */
