@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC042411220418C500B9813D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC042410220418C500B9813D /* main.cpp */; };
+		BC042411220418C500B9813D /* SDLmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC042410220418C500B9813D /* SDLmain.cpp */; };
 		BC042419220419E100B9813D /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC042418220419E100B9813D /* SDL2.framework */; };
+		BC04242922041E0900B9813D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC04241B22041CF000B9813D /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -21,12 +22,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		BC04242022041D6700B9813D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BC04240D220418C500B9813D /* CppReview */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppReview; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC042410220418C500B9813D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BC042410220418C500B9813D /* SDLmain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SDLmain.cpp; sourceTree = "<group>"; };
 		BC042418220419E100B9813D /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = lib/SDL2.framework; sourceTree = "<group>"; };
+		BC04241B22041CF000B9813D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BC04242222041D6700B9813D /* Wenjin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Wenjin; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,13 +50,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC04241F22041D6700B9813D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		BC042404220418C500B9813D = {
 			isa = PBXGroup;
 			children = (
-				BC04240F220418C500B9813D /* CppReview */,
+				BC04241A22041CA500B9813D /* Wenjin */,
+				BC04240F220418C500B9813D /* SDL */,
 				BC04240E220418C500B9813D /* Products */,
 				BC042417220419E000B9813D /* Frameworks */,
 			);
@@ -54,16 +74,17 @@
 			isa = PBXGroup;
 			children = (
 				BC04240D220418C500B9813D /* CppReview */,
+				BC04242222041D6700B9813D /* Wenjin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BC04240F220418C500B9813D /* CppReview */ = {
+		BC04240F220418C500B9813D /* SDL */ = {
 			isa = PBXGroup;
 			children = (
-				BC042410220418C500B9813D /* main.cpp */,
+				BC042410220418C500B9813D /* SDLmain.cpp */,
 			);
-			path = CppReview;
+			path = SDL;
 			sourceTree = "<group>";
 		};
 		BC042417220419E000B9813D /* Frameworks */ = {
@@ -72,6 +93,14 @@
 				BC042418220419E100B9813D /* SDL2.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC04241A22041CA500B9813D /* Wenjin */ = {
+			isa = PBXGroup;
+			children = (
+				BC04241B22041CF000B9813D /* main.cpp */,
+			);
+			path = Wenjin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +123,23 @@
 			productReference = BC04240D220418C500B9813D /* CppReview */;
 			productType = "com.apple.product-type.tool";
 		};
+		BC04242122041D6700B9813D /* Wenjin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC04242622041D6700B9813D /* Build configuration list for PBXNativeTarget "Wenjin" */;
+			buildPhases = (
+				BC04241E22041D6700B9813D /* Sources */,
+				BC04241F22041D6700B9813D /* Frameworks */,
+				BC04242022041D6700B9813D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wenjin;
+			productName = Wenjin;
+			productReference = BC04242222041D6700B9813D /* Wenjin */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +150,10 @@
 				ORGANIZATIONNAME = "Wenjin Zhang";
 				TargetAttributes = {
 					BC04240C220418C500B9813D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					BC04242122041D6700B9813D = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -122,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				BC04240C220418C500B9813D /* CppReview */,
+				BC04242122041D6700B9813D /* Wenjin */,
 			);
 		};
 /* End PBXProject section */
@@ -131,7 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC042411220418C500B9813D /* main.cpp in Sources */,
+				BC042411220418C500B9813D /* SDLmain.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC04241E22041D6700B9813D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC04242922041E0900B9813D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +330,22 @@
 			};
 			name = Release;
 		};
+		BC04242722041D6700B9813D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC04242822041D6700B9813D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -288,6 +363,15 @@
 			buildConfigurations = (
 				BC042415220418C500B9813D /* Debug */,
 				BC042416220418C500B9813D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC04242622041D6700B9813D /* Build configuration list for PBXNativeTarget "Wenjin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC04242722041D6700B9813D /* Debug */,
+				BC04242822041D6700B9813D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
