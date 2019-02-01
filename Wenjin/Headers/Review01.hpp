@@ -11,5 +11,6 @@
 #define Review01_hpp
 
 void print();
+void hello();
 
 #endif /* Review01_hpp */
