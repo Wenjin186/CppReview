@@ -9,6 +9,6 @@
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
-    std::cout<<"Wenjin's Project"<<std::endl;
+    std::cout<<"Wenjin's Project, Check Conflict"<<std::endl;
     return 0;
 }
