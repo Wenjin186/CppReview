@@ -6,7 +6,7 @@
 //  Copyright © 2019年 Wenjin Zhang. All rights reserved.
 //
 
-#include <iostream>
+#include "Headers/wenjin.h"
 
 int main(int argc, const char * argv[]) {
     std::cout<<"Wenjin's Project, Check Conflict"<<std::endl;
